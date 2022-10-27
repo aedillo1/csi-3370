@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManageInventoryController">
+   <children>
+      <ImageView fitHeight="590.0" fitWidth="749.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/876492_best-fresh-vegetables-on-wooden-pictures-and-wallpapers-elsoar_1024x710_h.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#00ff5f" layoutX="27.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: WHITE; -fx-stroke-width: 2;" text="Inventory Management " textAlignment="CENTER" wrappingWidth="258.50134468078613">
+         <font>
+            <Font name="Constantia" size="35.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="305.0" layoutY="48.0" prefHeight="400.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="col_ID" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="90.0" text="Name" />
+            <TableColumn fx:id="col_category" prefWidth="90.0" text="Category" />
+            <TableColumn fx:id="col_stock" prefWidth="50.0" text="Stock" />
+            <TableColumn fx:id="col_status" prefWidth="89.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="661.0" layoutY="463.0" prefHeight="17.0" prefWidth="71.0" text="Version 1.0.0" textFill="WHITE" />
+      <HBox layoutX="31.0" layoutY="367.0" prefHeight="88.0" prefWidth="249.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="85.0" spacing="5.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #00ff5f;" text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="13.0" />
+                     </font></Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#lowStock" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #00ff5f;" text="Low?" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="85.0" spacing="5.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#addItem" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #00ff5f;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="13.0" />
+                     </font></Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#removeItem" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #00ff5f;" text="Remove" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="80.0" spacing="5.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#updateItem" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #00ff5f;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="13.0" />
+                     </font></Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#refreshTable" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #00ff5f;" text="Refresh" textFill="WHITE">
+                     <font>
+                        <Font name="Constantia Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="84.0" layoutY="104.0" prefHeight="276.0" prefWidth="146.0">
+         <children>
+            <TextField fx:id="text_ID" alignment="CENTER" prefHeight="35.0" prefWidth="146.0" promptText="ID" />
+            <TextField fx:id="text_name" alignment="CENTER" prefHeight="35.0" prefWidth="144.0" promptText="Name" />
+            <TextField fx:id="text_category" alignment="CENTER" prefHeight="35.0" prefWidth="144.0" promptText="Category" />
+            <TextField fx:id="text_stock" alignment="CENTER" prefHeight="35.0" prefWidth="144.0" promptText="Stock" />
+            <TextField fx:id="text_status" alignment="CENTER" prefHeight="35.0" prefWidth="144.0" promptText="Status" />
+            <TextField fx:id="searchField" alignment="CENTER" prefHeight="35.0" prefWidth="144.0" promptText="Search">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

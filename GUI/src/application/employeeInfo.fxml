@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeInfoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/keih4mm9pyv3kpq8scymlnub2aecxzs9iscdane82nvbmfcc3leqqh7pjk0adoki-o.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="256.0" layoutY="14.0" prefHeight="378.0" prefWidth="192.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="177.0" text="Employee Info:">
+               <font>
+                  <Font name="Constantia Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="50.0" prefWidth="176.0">
+               <children>
+                  <Label text="Employee ID:">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="empID" text="[employee id]">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="176.0">
+               <children>
+                  <Label text="Employee Name:">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="empName" text="[employee name]">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="176.0">
+               <children>
+                  <Label text="Employee Password:">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="empPass" text="[employee pass]">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="176.0">
+               <children>
+                  <Label text="Employee Job:">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="empJob" text="[employee job]">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="176.0">
+               <children>
+                  <Label text="Employee SSN:">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="empSSN" text="[employee ssn]">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="50.0" prefWidth="176.0">
+               <children>
+                  <Label text="Employee Salary:">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="empSalary" text="[employee salary]">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button layoutX="505.0" layoutY="357.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="71.0" style="-fx-background-color: RED;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
